@@ -1,0 +1,21 @@
+# Academic Writing Task 1 - Australia's average rainfall by month (bar chart and line graph)
+
+**Source:** IELTS-Blog.com (Simone Braverman, site founder and author of the High Scorer's Choice IELTS Practice Tests book series)
+**URL:** https://www.ielts-blog.com/ielts-writing-samples/ielts-reports-band-9/ielts-report-topic-bar-chart-of-average-rainfall-by-month-from-ielts-high-scorers-choice-series-academic-set-1/
+**Crawled:** 2026-08-04T00:00:00
+**Task Type:** Task 1
+**Band Score:** 9.0
+**Test Type:** Academic
+
+**Prompt/Question:**
+> The bar chart below shows the average rainfall for Australia by month for last year. The line shows the average rainfall for Australia by month for the last 40 years. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
+
+---
+
+This report will describe a bar chart showing the average rainfall for Australia last year by month and the average rainfall in Australia for the past forty years.
+
+Overall, it can be seen that the average rainfall for Australia last year was a little lower than average rainfall in Australia for the past forty years, but generally followed the same pattern.
+
+The average rainfall of the last forty years in Australia decreased from a peak at the beginning of the year to lows in the months in the middle of the year. Towards the end of the year rainfall rose again. Rainfall data for last year generally followed the same trend as the last forty years' average.
+
+Although the general pattern of the two sets of data is similar, there are some differences. The line representing the accumulation of the average rainfall from the past forty years begins at around eighty millimetres in January and then drops sharply to around thirty millimetres in April. Rainfall then drops slowly to around thirteen millimetres in September and then again rises steadily to just under sixty millimetres in December. Average rainfall for the last year was a little lower than the forty-year average for most months, excepting March, May, June and November when the rainfall was a little heavier. August and October were particularly dry when compared with the forty-year average, at around five millimetres each compared with about fifteen and twenty millimetres each respectively for the forty-year average.

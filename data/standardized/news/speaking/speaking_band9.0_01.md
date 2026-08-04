@@ -1,0 +1,51 @@
+# IELTS Speaking Part 1 - Band 9 Sample Answers
+
+**Source:** IELTS Speaking Sample Answers Collection
+**URL:** https://ielts-thai-tuan.com/sample-ielts-speaking-answers/
+**Crawled:** 2026-08-04T00:00:00
+**Task Type:** Speaking
+**Band Score:** 9.0
+**Test Type:** Academic
+
+**Prompt/Question:**
+> IELTS Speaking Part 1 - Band 9 Sample Answers on Hobbies, Free Time Activities, Time topics.
+
+---
+
+# IELTS Speaking Part 1
+
+## Band 9 Sample Answer: Hobbies, free time activities and interests
+
+**Q: What hobbies are popular in your country?**
+Here in Brazil I really think that outdoor activities are really popular. So, some common hobbies are playing football, playing beach volleyball, surfing and even cycling.
+
+**Q: What do you enjoy doing in your free time?**
+Well, I really enjoy playing basketball, cycling and doing trails. I don't do trails, hikes, very often but when I go on holiday I like to do a hike up a mountain, or to go to a waterfall and get in the water, I really enjoy that. But when I'm here in the city I like to play basketball. So, every weekend I play basketball in a place called Aterro with some friends, usually on a Friday night or a Saturday evening - something like that.
+
+**Q: Did you have any hobbies as a child?**
+Well, as a child I really liked professional wrestling so I followed WWF. I would watch it like every week. I think it was on on a Friday night. I would record the pay-per-views because they would show it too late, so I would watch it the next morning after school. Sometimes actually I would watch it before going to school while having breakfast I would watch the main event, something like that, and I also liked just playing with my friends, playing football, that kind of thing.
+
+**Q: Should parents encourage children to have hobbies?**
+I definitely think parents should encourage their children to have hobbies and interests. Firstly, because the hobby could lead to a career, a future career for that child. And secondly, I think it's just great to have hobbies and interests, something you like to do, something you like to read about or you like to follow - I think this makes life more interesting.
+
+---
+
+## Band 9 Sample Answer: Time
+
+**Q: When was the last time you were rather late?**
+Um, that's a good one, let me have a think. Yeah, I think I remember. I think the last time I was rather late was last Christmas. Me and my wife, we went to her family's house, and we were supposed to get there at 9 o'clock but we ended up getting there about 10, maybe just before 10. But it wasn't, it was Christmas, you know, I think everyone was fine with it, it wasn't really an issue.
+
+**Q: How do you feel when other people are late?**
+Well, it depends. If it's for work I think it's rude, I think it's inconsiderate, and I think it shows that the person who's late doesn't really care about what they had scheduled. But if it was for something that was scheduled between friends or family, like a casual thing, then I think it's OK if someone's a little bit late, you know, like no big deal, if my brother is twenty minutes late or something like that, I'm not gonna get annoyed at him because of that, you know, that would be ridiculous. But let's imagine you organise a dinner for your friends and you're cooking and you say get there at 7 and they get there at 9, come on, you've just ruined dinner, you know, then it's... but I think that's a very extreme situation, that kind of thing won't happen every day.
+
+**Q: Do you think these days people have enough time?**
+No, definitely not. I think these days people who work Monday to Friday, all they're really doing is just thinking about work, you know, they have deadlines to meet, they have things to do, and they don't have time to think about their personal life, to think about what they want to do, not what they need to do, what they want to do, you know, they don't have time to do a hobby or an activity because they're just thinking about what they have to do at work, then they have to prepare dinner, eat and then go to sleep. So, definitely not, I don't think people these days have enough time.
+
+**Q: How do you think children perceive time?**
+That's an interesting question, I've never really thought about that before, but let me have a look. Yeah, I think that in general time lasts much longer for children. If you compare like a year of a child's life, I think in their mind it's basically like for us it's the equivalent of 3 years as an adult. I think time feels much longer for children.
+
+---
+
+## Examiner's Comment
+
+Band 9 - Exceptional fluency and coherence. Uses natural expressions, idioms, and colloquialisms appropriately. Demonstrates sophisticated vocabulary with precise word choice. Complex grammatical structures used with remarkable accuracy. Successfully handles unfamiliar topics with ease. Responses are fully developed, well-organized, and maintain excellent flow throughout.

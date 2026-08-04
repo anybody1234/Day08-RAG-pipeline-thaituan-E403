@@ -1,0 +1,27 @@
+# Writing Task 2 - Problems and solutions of professionals leaving poorer countries to work abroad
+
+**Source:** IELTS Buddy
+**URL:** https://www.ieltsbuddy.com/ielts-band-8-essay-samples.html
+**Crawled:** 2026-08-04T00:00:00
+**Task Type:** Task 2
+**Band Score:** 8.0
+**Test Type:** Academic
+
+**Prompt/Question:**
+> An increasing number of professionals, such as doctors and teachers, are leaving their own poorer countries to work in developed countries. What problems does this cause? What solutions can you suggest to deal with this situation?
+
+---
+
+Nowadays more and more professionals that play a key role in the social stability and development, including in the spheres of education and medicine prefer to find a job in more developed countries that provide more opportunities. Evidently, it creates a deficiency and lack of professional help in the above-mentioned spheres. This essay will address the problems such situation causes and conceivable solutions to redress it.
+
+The most serious problem associated with the drain of the experts in vital areas of life is the consequent shortage of specialists and hence, lack of professional help for citizens of poor countries that can lead to deterioration of the conditions of life. It goes without saying that it is the work of these specialists that is absolutely essential for the survival of people. For example, if professional, qualified doctors leave their poorer countries in search of a better life it leads to a deterioration in the medical help available and in some cases even considerable life losses and decrease of life expectancy. Therefore, local communities and the whole society are seriously affected by such changes in the labour market.
+
+To redress the balance in such a situation there must be serious measures taken by the government. Considerable funds are to be invested in these spheres to contribute to the improvement of work conditions and salaries of different professionals. For example, governments might stimulate young professionals by paying them additional bonuses for working in public hospitals and schools or fund their education. This, in turn, will create better chances to retain stuff and boost the morale of experts, who might choose to stay in their countries in order to contribute to its growth and development.
+
+To conclude, it is apparent that a great number of specialists, especially young ones, opt for working in more developed countries and this trend is unlikely to change in the foreseeable future. However, governments can try to solve this problem by allocating more funds and invest more in the enhancement of working conditions for specialists. Were they to turn a blind eye to the current situation, it would have a pernicious effect on their countries.
+
+---
+
+## Examiner's Comment
+
+Task Response (8): Both problems and solutions are addressed in the essay, and ideas are extended and supported. The ideas though in each body paragraph could have been explained more succinctly, providing the opportunity to add further supporting ideas, rather than the just one that appear in each body paragraph. Reducing the length of the introduction and conclusion would help to achieve this. Coherence & Cohesion (8): Generally coherence and cohesion is very good in this essay but there could be more variety and more sophisticated cohesive devices used i.e. 'for example' is used twice. Lexical Resource (8): An excellent range of vocabulary, mostly used correctly and appropriately. However, a few minor errors persist, such as using 'stuff' instead of 'staff'. Grammatical Range and Accuracy (8): Overall very good grammar, but there are still a few grammatical errors or the wrong choices. For example, 'Considerable funds are to be invested' should be 'Considerable funds should be invested' and there are also some errors with punctuation, such as missing commas.

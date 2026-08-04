@@ -1,0 +1,27 @@
+# Academic Writing Task 2 - Why people participate in dangerous sports and how to minimise the risks
+
+**Source:** IELTS Buddy
+**URL:** https://www.ieltsbuddy.com/ielts-band-7-essay-samples.html
+**Crawled:** 2026-08-04T00:00:00
+**Task Type:** Task 2
+**Band Score:** 7.0
+**Test Type:** Academic
+
+**Prompt/Question:**
+> Large numbers of people participate in sports that are extremely dangerous. Why do you think people do this? How can the risks of participation be minimised?
+
+---
+
+Today many games are being played all over the world. Some of them are extremely risky and life threatening. Despite of these facts their popularity is growing and many people are playing such games on a professional level. This essay will identify the reasons why people are playing such life threatening games and provide some practical approaches to minimize the risk associated with these games.
+
+First of all we need to find out the reason why such dangerous games are becoming so popular. To start with, the major attraction for players is good money that could be earned from a single game in just one day. This type of quick money increases stimulation among many players to adopt games such as boxing, wrestling, bull riding etc. Perhaps, fame and popularity is another compelling reason that encourages people to choose certain games. Furthermore, its proven that it is human nature to accept challenges and do things differently. Many players love to accept challenges and they want to astonish the world by their unique talent and skills.
+
+As these games are now being introduced in the world and many people are joining them it is important to reduce risks by introducing some policies and procedures. For instance, anyone who wants to participate in particular games would not be allowed to play it until he/she deemed hundred per cent competence in required skills and knowledge. Secondly, it is important to endorse high quality personal protection equipment and training to combat risk associated with games.
+
+In conclusion, excellent level of policies, procedures and training are integral part of treating the risks associated with such games.
+
+---
+
+## Examiner's Comment
+
+Task Response (Band 7): all parts of the task are covered and a clear position is presented; some main ideas are a bit generalised and would need to be more specific to reach an 8. Coherence & Cohesion (Band 7): the essay is logical with a clear progression and a range of cohesive devices are used, though more sophisticated cohesive devices would be needed for an 8. Lexical Resource (Band 7): a sufficient range of vocabulary and some less common vocabulary are used, but some errors in word choice prevent a band 8. Grammatical Range and Accuracy (Band 7): overall very good grammar, but there is an error in quite a few of the sentences; most are minor but a couple are quite noticeable.

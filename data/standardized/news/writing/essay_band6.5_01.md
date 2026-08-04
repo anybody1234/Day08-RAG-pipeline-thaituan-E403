@@ -1,0 +1,27 @@
+# Academic Writing Task 2 - Getting married and having children in one's thirties: positive or negative development
+
+**Source:** IELTS Podcast
+**URL:** https://www.ieltspodcast.com/writing-task-2/writing-band-6-5/
+**Crawled:** 2026-08-04T00:00:00
+**Task Type:** Task 2
+**Band Score:** 6.5
+**Test Type:** Academic
+
+**Prompt/Question:**
+> Today, most people get married and give birth in their thirties rather than when they are younger. Is it a positive or negative development in your opinion? To what extent do you support this development?
+
+---
+
+The issue of early weddings followed by a pregnancy before thirties has grown in importance over the past few years. This is a common dream between many women, but nowadays this dream is facing drastic changes due to many factors. Globalization, economic crises and increasing population numbers are contributing for that. I strongly believe that couples need to be aware and convicts of their situation before decide to have children before thirties.
+
+Although an early marriage and pregnancy is a desire for many couples, there are some factors that need to be considered. Firstly, due to the world economic crises which made the number of available jobs decrease considerably and also the real state industry increasing prices exponentially, directly affecting millions of people and their dreams of constitute a family and buy the first residence. Secondly, the cost of living is reaching numbers that average salaries cannot afford. For example, a study from Boston university showed that nearly one third of the newlyweds in which the couples were below thirties, do not intend to have children. The central reason behind this is the uncertainty of being able to provide a decent life for their children.
+
+However, this scenario is a tendency for our reality these days, I firmly believe that this situation is a negative development in the society. Many families are being constituted late or even not starting. For example, women having their babies after 35 years old is a risk not only for the mother's health, as well for the baby. The child can be born with malformation and very weak with a risk to develop diseases due to their fragile immune system. On the same way the mother, that can face serious health problems and also a big risk of losing the child.
+
+To conclude, a mature decision must be made for the couple. Not only the desire of an early marriage with many sons but, more important than that if they would be able to provide the basics for the children like a health environment, education and support. In my opinion a balance between the desire versus reality must be taken in consideration before take a decision. After that within the couple limits, decide a proper age to get married and have their children.
+
+---
+
+## Examiner's Comment
+
+Overall probable score of 6.5-7.0, assessed on the page using colour-coded criteria. Lexical Resource: some unnatural language and non-standard collocations. Cohesion and Coherence: generally well organised with some structural problems. Task Response: the feedback notes, "Be sure to focus on the question. It isn't asking you why this situation came about," indicating the response drifts from the exact question wording. Grammatical Range and Accuracy: generally accurate with some errors noted.

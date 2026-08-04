@@ -1,0 +1,31 @@
+# General Training Writing Task 2 - Is socializing online instead of face-to-face a positive or negative development?
+
+**Source:** IELTSKaro.com (Yasir Saeed, IELTS instructor and site owner)
+**URL:** https://ieltskaro.com/analyze-ielts-sample-essay-band-9/
+**Crawled:** 2026-08-04T00:00:00
+**Task Type:** Task 2
+**Band Score:** 8.5
+**Test Type:** General Training
+
+**Prompt/Question:**
+> Nowadays, more and more people are choosing to socialize online rather than face-to-face. Why is this happening? Is this a positive or a negative development?
+
+---
+
+In today's fast-paced world, there has been a shift in the mode of socializing, as communication has moved from the conventional face-to-face pattern, to modern social media approach. This essay takes a look at the factors behind this occurrence and its effects on mankind. In my opinion, I strongly believe that the benefits of this trend outweigh the drawbacks.
+
+The deadly COVID-19 pandemic which ravaged the world years ago, brought about changes to human activities. The most notable of them was the widespread acceptance of the internet and communication. This means that, notwithstanding one's location, people were not only able to interact online, but also build relationships with strangers.
+
+Furthermore, businesses can have a wider reach around the globe, attracting new customers in cost effective manners, as opposed to the exorbitant cost in achieving this physically. For Instance, entertainers in Africa who have struggled to gain international recognition in the past, can now boast of a wide range of global audiences. Entertainers, freelancers, and remote workers, all rely on the power of the internet to set up an entire business online without any physical presence.
+
+Conversely, the primary drawback associated with the internet, is the exposure to fraudsters. In other words, with social media not being regulated, fraudulent activities are bound to be perpetrated. Hence, it exposes minors and innocents to extreme danger.
+
+For example, I recall a conversation I had with an internet user who sought for my personal details in a somewhat friendly manner, unknowing to me that he had the intention of defrauding me. If I did not probe further, I would have been a victim of his scam.
+
+In conclusion, individuals have opted to make friends online, rather than in-person. I remain of the opinion that this is a positive development owing to its significant merits, despite the disadvantages of communicating online.
+
+---
+
+## Examiner's Comment
+
+This essay has relevant examples, uses complex, active voice and passive voice, as well as negative and positive developments. It has a strong introduction and an amazing conclusion.

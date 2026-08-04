@@ -1,5 +1,5 @@
 """
-RAG Chatbot — University Services (Starter Template)
+RAG Chatbot — IELTS Band Descriptors & Sample Essays
 Streamlit app kết nối RAG Retrieval (Task 9) và Generation (Task 10).
 
 Chạy:
@@ -9,6 +9,12 @@ Chạy:
 import os
 import sys
 from pathlib import Path
+
+# Fix Windows encoding — charmap không encode được Unicode (✓, ⚠)
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if sys.stderr and hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 import streamlit as st
 from dotenv import load_dotenv
@@ -24,8 +30,8 @@ sys.path.insert(0, str(PROJECT_ROOT))
 # =============================================================================
 
 st.set_page_config(
-    page_title="University Services RAG Chatbot",
-    page_icon="🎓",
+    page_title="IELTS Band Descriptors RAG Assistant",
+    page_icon="📝",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -35,18 +41,18 @@ st.set_page_config(
 # =============================================================================
 
 with st.sidebar:
-    st.title("🎓 University Services RAG")
-    st.caption("Trợ lý hỏi đáp về dịch vụ và chính sách đại học (học phí, học bổng, ký túc xá, thư viện)")
+    st.title("📝 IELTS RAG Assistant")
+    st.caption("Trợ lý tra cứu tiêu chí chấm điểm IELTS (Band Descriptors) & phân tích Essay mẫu Band 8.0+")
 
     st.divider()
 
     st.subheader("💡 Câu hỏi gợi ý")
     suggestions = [
-        "Học phí tại RMIT Vietnam là bao nhiêu?",
-        "Làm sao để đặt phòng học nhóm ở thư viện?",
-        "Điều kiện xin học bổng Academic Achievement?",
-        "Dịch vụ hỗ trợ chỗ ở cho sinh viên như thế nào?",
-        "Cách đăng ký học phần qua myRMIT?",
+        "Sự khác biệt giữa Band 6 và Band 7 ở Lexical Resource?",
+        "Cho ví dụ cohesive devices đạt Band 8 trong Cause-Effect essay",
+        "Band 9 Task Achievement cần những gì?",
+        "Phân tích cấu trúc bài essay mẫu Opinion Band 8.5",
+        "So sánh tiêu chí Coherence & Cohesion giữa Band 7 và Band 8",
     ]
     for s in suggestions:
         if st.button(s, use_container_width=True, key=f"sug_{s[:20]}"):
@@ -59,6 +65,11 @@ with st.sidebar:
     st.divider()
     st.caption("**Kiến trúc hệ thống:**")
     st.caption("Hybrid Retrieval (Semantic + BM25) → RRF Rerank → PageIndex Fallback → LLM Generation có Citation")
+
+    st.divider()
+    st.caption("**Nguồn dữ liệu:**")
+    st.caption("• IELTS Writing Band Descriptors (British Council/IDP)")
+    st.caption("• Bộ sưu tập Essay mẫu Band 8.0+ kèm Examiner Comments")
 
 # =============================================================================
 # SESSION STATE
@@ -73,8 +84,8 @@ if "pending_query" not in st.session_state:
 # MAIN CHAT AREA
 # =============================================================================
 
-st.title("🎓 University Services RAG Chatbot")
-st.caption("Hệ thống hỏi đáp thông tin dịch vụ đại học (Học phí, Học bổng, Ký túc xá, Thư viện)")
+st.title("📝 IELTS Band Descriptors RAG Assistant")
+st.caption("Tra cứu tiêu chí chấm điểm IELTS & phân tích Essay mẫu Band 8.0+")
 
 # Hiển thị lịch sử chat
 for msg in st.session_state.messages:
@@ -96,7 +107,7 @@ for msg in st.session_state.messages:
 # =============================================================================
 
 # Xử lý khi bấm nút gợi ý hoặc nhập câu hỏi mới
-user_input = st.chat_input("Nhập câu hỏi của bạn về chính sách/dịch vụ đại học...")
+user_input = st.chat_input("Hỏi về tiêu chí chấm điểm IELTS hoặc phân tích essay mẫu...")
 query = user_input or st.session_state.pending_query
 
 if query:
@@ -109,16 +120,8 @@ if query:
 
     # Sinh câu trả lời từ RAG Pipeline
     with st.chat_message("assistant"):
-        with st.spinner("Đang tìm kiếm tài liệu và tổng hợp câu trả lời..."):
+        with st.spinner("Đang tìm kiếm tài liệu IELTS và tổng hợp câu trả lời..."):
             try:
-                # TODO (Học viên): Tích hợp hàm sinh câu trả lời từ Task 10
-                # Ví dụ:
-                # from src.task10_generation import generate_with_citation
-                # response = generate_with_citation(query, top_k=top_k)
-                # answer = response["answer"]
-                # sources = response.get("sources", [])
-
-                # Tạm thời mockup để test UI:
                 from src.task10_generation import generate_with_citation
                 response = generate_with_citation(query, top_k=top_k)
                 answer = response.get("answer", "Chưa thể trả lời.")

@@ -1,0 +1,35 @@
+# Academic Writing Task 2 - Causes of increased demand for fresh water and possible solutions
+
+**Source:** IELTS Buddy
+**URL:** https://www.ieltsbuddy.com/ielts-band-6-essay-samples.html
+**Crawled:** 2026-08-04T00:00:00
+**Task Type:** Task 2
+**Band Score:** 6.0
+**Test Type:** Academic
+
+**Prompt/Question:**
+> Fresh water has always been a limited resource in some parts of the world. Today, however, growing worldwide demand has made this a global problem. What are the causes of the increased demand and what measures could governments and individuals take to respond to this problem?
+
+---
+
+Fresh water resource is a worldwide issue, that is related to varied factors, and it should be involve every country in the world. This essay will illustrate some reasons of the increasing demand and some solutions to solve as soon as possible.
+
+Nowadays, because of industrialization, many European country has resolved this problem because every citizen are able to get drinkable water, but there is a huge difference with the third countries. Although, European people do not miss water, limited water resource is becoming a global emergency that could affect every nation.
+
+Firstly, the rising request is related to the overpopulation; that is the reason why Chinese government has tried to reduce and regulate birth, so they have got the power to limit and control the population growth; this is not a reasonable political action to take.
+
+Secondly, the overpopulation has caused a growing demand of food, so further water has been used by farmer for agriculture; moreover, not all the farms have an appropriate and modern infrastructures and machines to give water to the soil, consequently a huge amount of this natural resource is wasted.
+
+A solution could be taken by local governments, such as, investments in new technologies, which are able to reuse water from soil, or more invested money on the creation of food in laboratories, in this last scenario a vast amount of water could be saved.
+
+In addition, global warming has affected significantly this issue, for this reason international cooperation should try to reduce the environment changing to preserve water, avoiding deforestation and pollution, increasing renewable energy.
+
+I would suggest teaching and educating children and students to save water in everyday life, these lessons could help them to notice their usage in their private house.
+
+In conclusion, I think some solutions could be found to fix the problem; however, we should work all together to make the difference.
+
+---
+
+## Examiner's Comment
+
+Task Response (Band 6): identifies causes and solutions but includes some incomplete explanations and irrelevant information; global warming is introduced late as a cause without being clearly linked back to water shortages. Coherence & Cohesion (Band 6): organisation could be improved by grouping all causes in one paragraph and all solutions in another rather than scattering them throughout the essay. Lexical Resource (Band 6): vocabulary is adequate for the task but contains some awkward phrasing, such as 'solutions to solve'. Grammatical Range and Accuracy (Band 6): a mix of simple and complex sentences is used with a number of small errors throughout, particularly comma-splice punctuation issues.
