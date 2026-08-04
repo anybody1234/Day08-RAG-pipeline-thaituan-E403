@@ -323,7 +323,7 @@ class TestTask6(unittest.TestCase):
         """Mỗi result có 'content', 'score'."""
         search = self._import_task6()
         try:
-            results = search("scholarship eligibility", top_k=3)
+            results = search("IELTS band descriptors writing", top_k=3)
             if not results:
                 self.skipTest("Không có kết quả")
             for r in results:
@@ -348,10 +348,9 @@ class TestTask6(unittest.TestCase):
         """Query có keyword match phải có score > 0."""
         search = self._import_task6()
         try:
-            results = search("tuition fee", top_k=3)
+            results = search("lexical resource band", top_k=3)
             if not results:
                 self.skipTest("Không có kết quả")
-            # Ít nhất 1 result phải có score > 0
             max_score = max(r["score"] for r in results)
             self.assertGreater(max_score, 0, "Tất cả score = 0, BM25 có thể bị lỗi")
         except NotImplementedError:

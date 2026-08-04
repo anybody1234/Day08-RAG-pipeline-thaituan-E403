@@ -83,16 +83,15 @@ def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
 
         client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
 
-        # Lấy danh sách documents đã upload
-        docs = client.list_documents()
-        if not docs:
-            print("  ⚠ Chưa upload documents lên PageIndex")
+        docs_resp = client.list_documents()
+        doc_list = docs_resp.get("documents", []) if isinstance(docs_resp, dict) else docs_resp
+        if not doc_list:
+            print("  [PageIndex] Chua upload documents len PageIndex")
             return []
 
         results = []
 
-        # Query mỗi document
-        for doc_info in docs[:3]:  # Giới hạn 3 documents để tránh chậm
+        for doc_info in doc_list[:3]:
             doc_id = doc_info.get("doc_id") or doc_info.get("id")
             if not doc_id:
                 continue

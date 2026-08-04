@@ -27,7 +27,7 @@ from .task8_pageindex_vectorless import pageindex_search
 # Threshold dựa trên cosine similarity gốc từ semantic_search (thang [0,1]).
 # Calibrate bằng cách chạy query liên quan (score ~0.5-0.8) vs query lạc đề (score ~0.2-0.3).
 # 0.3 là ngưỡng hợp lý: dưới 0.3 → nội dung rất ít liên quan.
-SCORE_THRESHOLD = 0.3
+SCORE_THRESHOLD = 0.48
 DEFAULT_TOP_K = 5
 RERANK_METHOD = "rrf"  # "cross_encoder" | "mmr" | "rrf"
 
