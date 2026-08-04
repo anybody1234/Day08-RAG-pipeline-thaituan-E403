@@ -1,88 +1,88 @@
-# Bài Tập Nhóm — University Services RAG Chatbot
+# Bài Tập Nhóm — IELTS RAG Chatbot & Evaluation Pipeline
 
-## Mục Tiêu
+## Thành viên nhóm
 
-Sau khi hoàn thành bài cá nhân, nhóm ngồi lại để xây dựng **1 trong 2 sản phẩm**:
-
----
-
-## Yêu cầu 1: Sản phẩm nhóm RAG Chatbot
-
-Xây dựng chatbot trả lời câu hỏi về dịch vụ và chính sách đại học liên quan.
-
-**Yêu cầu:**
-- Giao diện chat (Streamlit / Gradio / Chainlit)
-- Trả lời có citation (dựa trên Task 10)
-- Hỗ trợ follow-up questions (conversation memory)
-- Hiển thị source documents đã dùng
-
-**Stack gợi ý:**
-```
-Chainlit/Streamlit → Retrieval (Task 9) → Generation (Task 10) → Display
-```
+| STT | Họ và tên | Mã học viên | Nhiệm vụ | Trạng thái |
+|-----|-----------|-------------|----------|------------|
+| 1 | Lục Minh Đức | 2A202601918 | Team Leader & RAG Architect — Điều phối, ghép pipeline Task 9, kiểm tra tổng thể | Hoàn thành |
+| 2 | Phan Hoàng Long | 2A202601565 | Data & Pipeline Specialist — Task 1-4 (thu thập dữ liệu, chunking, indexing) | Hoàn thành |
+| 3 | Phạm Nguyên Việt | 2A202601547 | Frontend & Chatbot Dev — app.py (Streamlit UI), Task 10 (Generation) | Hoàn thành |
+| 4 | Phạm Bá Thượng Hải | 2A202601797 | Evaluation & QA Engineer — golden_dataset.json, eval_pipeline.py, results.md | Hoàn thành |
 
 ---
 
-## Yêu cầu 2: RAG Evaluation Pipeline
+## Chủ đề dữ liệu
 
-Sử dụng **1 trong 3 framework** sau để evaluate pipeline RAG của nhóm:
-
-### Framework lựa chọn
-
-| Framework | Cài đặt | Đặc điểm |
-|-----------|---------|-----------|
-| [DeepEval](https://github.com/confident-ai/deepeval) | `pip install deepeval` | Nhiều metric built-in, dễ integrate với pytest |
-| [RAGAS](https://github.com/explodinggradients/ragas) | `pip install ragas` | Chuẩn industry cho RAG eval, 3 trục chính |
-| [TruLens](https://github.com/truera/trulens) | `pip install trulens` | Dashboard UI, feedback functions mạnh |
-
-### Yêu cầu Evaluation
-
-1. **Tạo Golden Dataset** — tối thiểu 15 cặp Q&A (question, expected_answer, expected_context)
-2. **Chạy evaluation** trên toàn bộ golden dataset với các metrics sau:
-   - **Faithfulness** — câu trả lời có bám đúng context không?
-   - **Answer Relevance** — câu trả lời có đúng câu hỏi không?
-   - **Context Recall** — retriever có lấy đủ evidence không?
-   - **Context Precision** — trong context lấy về, bao nhiêu % thực sự hữu ích?
-3. **So sánh A/B** — chạy eval trên ít nhất 2 config khác nhau (ví dụ: có reranking vs không reranking, hoặc hybrid vs dense-only)
-4. **Báo cáo** — bảng điểm + phân tích worst performers + đề xuất cải tiến
-
-Xem code mẫu (DeepEval/RAGAS/TruLens) chi tiết trong `README.md` gốc mục "Yêu cầu 2".
-
-### Deliverable Evaluation
-
-- [ ] File `group_project/evaluation/golden_dataset.json` — 15+ cặp Q&A
-- [ ] File `group_project/evaluation/eval_pipeline.py` — script chạy evaluation
-- [ ] File `group_project/evaluation/results.md` — bảng điểm + phân tích
-- [ ] So sánh A/B ít nhất 2 configs
-
----
-
-## Yêu Cầu Chung
-
-1. **Tích hợp pipeline** từ bài cá nhân của các thành viên
-2. **Demo hoạt động được** trong buổi trình bày (chạy local hoặc deploy)
-3. **Evaluation pipeline** chạy được và có báo cáo kết quả
-4. **Code push lên repository** chung của nhóm
-5. **README** mô tả kiến trúc và phân công (điền bên dưới)
+**IELTS Band Descriptors & Sample Essays** — Tiêu chí chấm điểm IELTS Writing & Speaking (Band 6.0-9.0) kèm bài mẫu từ nguồn chính thức (ielts.org, British Council/IDP).
 
 ---
 
 ## Kiến Trúc Hệ Thống
 
 ```
-[Vẽ diagram kiến trúc ở đây]
+                         +------------------+
+                         |   Streamlit UI   |
+                         |    (app.py)      |
+                         +--------+---------+
+                                  |
+                                  v
+                    +-------------+-------------+
+                    |  generate_with_citation()  |
+                    |       (Task 10)            |
+                    |  - Reorder lost-in-middle  |
+                    |  - Format context + cite   |
+                    |  - LLM (OpenRouter)        |
+                    +-------------+-------------+
+                                  |
+                                  v
+                    +-------------+-------------+
+                    |     retrieve() — Task 9    |
+                    |    Retrieval Pipeline       |
+                    +-------------+-------------+
+                                  |
+              +-------------------+-------------------+
+              |                                       |
+              v                                       v
+   +----------+----------+                 +----------+----------+
+   | Semantic Search      |                 | Lexical Search      |
+   | (Task 5)             |                 | (Task 6 — BM25)     |
+   | cosine similarity    |                 | keyword matching     |
+   +----------+----------+                 +----------+----------+
+              |                                       |
+              v                                       v
+   +----------+----------+              +-------------+----------+
+   | ChromaDB (Task 4)   |              | BM25 Index (rank-bm25) |
+   | 481 chunks           |              | 481 documents          |
+   | all-MiniLM-L6-v2     |              +------------------------+
+   +---------------------+
+              |
+              +-----> RRF Reranking (Task 7, k=60)
+              |
+              +-----> Score < 0.48? ---> PageIndex Fallback (Task 8)
+
+   Dữ liệu:
+   PDF (ielts.org) ---> MarkItDown ---> Markdown ---> Chunking ---> Embedding ---> ChromaDB
+   JSON (essays)   --->            ---> Markdown ---> Chunking ---> Embedding ---> ChromaDB
 ```
 
 ---
 
-## Phân Công Công Việc
+## Sản phẩm nhóm
 
-| Thành viên | MSSV | Nhiệm vụ | Trạng thái |
-|-----------|------|----------|------------|
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+### 1. RAG Chatbot (app.py)
+
+- **Giao diện:** Streamlit với 3 tabs (So sánh kỹ thuật | Câu trả lời LLM | Phân tích chi tiết)
+- **So sánh 4 kỹ thuật retrieval:** Semantic, BM25, Hybrid+RRF, PageIndex — hiển thị cạnh nhau
+- **Tính năng:** câu hỏi gợi ý, slider top_k, overlap matrix, score distribution, timing chart
+- **Generation:** LLM (gpt-4o-mini qua OpenRouter) với citation và trích dẫn nguồn
+
+### 2. Evaluation Pipeline (group_project/evaluation/)
+
+- **Framework:** Lightweight RAGAS-style metrics (keyword overlap + token matching)
+- **Golden dataset:** 18 bộ đề (9 Speaking + 9 Writing), tổng 21 câu hỏi đánh giá
+- **4 metrics:** Faithfulness, Answer Relevance, Context Recall, Context Precision
+- **A/B testing:** Config A (Hybrid+RRF) vs Config B (Semantic-only)
+- **Báo cáo:** results.md đầy đủ bảng điểm, phân tích worst performers, 4 đề xuất cải tiến
 
 ---
 
@@ -92,14 +92,26 @@ Xem code mẫu (DeepEval/RAGAS/TruLens) chi tiết trong `README.md` gốc mục
 # Cài đặt dependencies
 pip install -r requirements.txt
 
-# Chạy app
+# Chạy chatbot
 streamlit run app.py
-# hoặc
-chainlit run app.py
+
+# Chạy evaluation pipeline
+python -m group_project.evaluation.eval_pipeline
+
+# Chạy tests (35/35 passed)
+pytest tests/test_individual.py -v
 ```
 
 ---
 
-## Lưu ý
+## Cấu hình
 
-Hãy giữ lại repo này nếu như bạn học track 3 giai đoạn 2, chúng ta sẽ phát triển tiếp dự án lên knowledge graph để khắc phục các câu hỏi hóc búa khi có các câu hỏi khó.
+| Tham số | Giá trị |
+|---------|---------|
+| Embedding model | sentence-transformers/all-MiniLM-L6-v2 (384 dim) |
+| Chunking | RecursiveCharacterTextSplitter (size=500, overlap=50) |
+| Vector store | ChromaDB (481 chunks, cosine similarity) |
+| Reranking | RRF (k=60) |
+| Fallback threshold | Cosine score < 0.48 |
+| LLM | gpt-4o-mini (OpenRouter) |
+| Temperature | 0.3 |

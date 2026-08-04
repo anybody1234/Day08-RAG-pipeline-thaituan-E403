@@ -13,15 +13,6 @@ pinned: false
 
 **Chương 2 | Ngày 8 trong 15**
 
-## Thành viên nhóm
-
-| STT | Họ và tên | Mã học viên |
-|-----|-----------|-------------|
-| 1 | Lục Minh Đức | 2A202601918 |
-| 2 | Phan Hoàng Long | 2A202601565 |
-| 3 | Phạm Bá Thượng Hải | 2A202601797 |
-| 4 | Phạm Nguyên Việt | 2A202601547 |
-
 > Dùng chung chủ đề "University Services" với biến thể K3 của Ngày 7 (`K3_VARIANT.md`), để pipeline Ngày 7 → Ngày 8 nhất quán.
 
 ---
