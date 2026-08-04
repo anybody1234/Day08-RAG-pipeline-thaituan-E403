@@ -1,17 +1,641 @@
-[
-  {
-    "question": "Học phí hàng năm của chương trình Business tại RMIT Vietnam là bao nhiêu?",
-    "expected_answer": "Khoảng 375.840.000 VND mỗi năm (tùy chương trình cụ thể).",
-    "expected_context": "Trang Tuition Fees, mục Undergraduate Programs"
+{
+  "dataset_name": "IELTS Golden Dataset for RAG Evaluation",
+  "version": "3.0",
+  "description": "High-quality IELTS speaking and writing test sets for RAG system evaluation. Each speaking set requires all 3 parts, each writing set requires both tasks to calculate band score.",
+  "created_date": "2026-08-04",
+  "total_speaking_sets": 9,
+  "total_writing_sets": 9,
+  "speaking_sets": [
+    {
+      "set_id": "spk_band_6_0_001",
+      "target_band_range": "6.0",
+      "difficulty": "easy",
+      "parts": {
+        "part_1": {
+          "id": "spk_p1_001",
+          "category": "Daily Routine",
+          "questions": [
+            "What is your daily routine?",
+            "Do you prefer weekdays or weekends?",
+            "How do you usually spend your evenings?"
+          ],
+          "expected_keywords": ["morning", "work", "sleep", "busy", "relax", "usual", "schedule"],
+          "expected_response_length": "short (4-8 sentences per question)"
+        },
+        "part_2": {
+          "id": "spk_p2_001",
+          "cue_card": "Describe your favourite day of the week.\n\nYou should say:\n- which day it is\n- what you usually do on that day\n- why it is your favourite\n\nand explain what makes this day special.",
+          "expected_keywords": ["weekend", "Saturday", "Sunday", "relax", "family", "friends", "free time"],
+          "expected_response_length": "medium (1-2 minutes)"
+        },
+        "part_3": {
+          "id": "spk_p3_001",
+          "category": "Work-Life Balance",
+          "questions": [
+            "Do you think work-life balance is important?",
+            "How can people achieve a better work-life balance?",
+            "Has work-life balance changed in recent years?"
+          ],
+          "expected_keywords": ["balance", "work", "life", "time", "family", "stress", "important"],
+          "expected_response_length": "medium discussion"
+        }
+      },
+      "scoring_requirement": "All 3 parts must be completed to calculate band score"
+    },
+    {
+      "set_id": "spk_band_6_5_002",
+      "target_band_range": "6.5",
+      "difficulty": "easy-medium",
+      "parts": {
+        "part_1": {
+          "id": "spk_p1_002",
+          "category": "Food",
+          "questions": [
+            "What is your favourite type of food?",
+            "Do you prefer cooking at home or eating out?",
+            "Is traditional food important in your country?"
+          ],
+          "expected_keywords": ["food", "cooking", "restaurant", "healthy", "vegetables", "meat", "delicious"],
+          "expected_response_length": "short-medium (5-8 sentences per question)"
+        },
+        "part_2": {
+          "id": "spk_p2_002",
+          "cue_card": "Describe a meal you enjoyed recently.\n\nYou should say:\n- what you ate\n- where you were\n- who you were with\n\nand explain why you enjoyed this meal.",
+          "expected_keywords": ["delicious", "restaurant", "birthday", "celebration", "special", "taste"],
+          "expected_response_length": "medium (1-2 minutes)"
+        },
+        "part_3": {
+          "id": "spk_p3_002",
+          "category": "Food and Health",
+          "questions": [
+            "How has people's diet changed in recent years?",
+            "Do you think fast food is harmful to health?",
+            "What can governments do to improve public health?"
+          ],
+          "expected_keywords": ["healthy", "fast food", "obesity", "diet", "exercise", "government", "health"],
+          "expected_response_length": "medium discussion"
+        }
+      },
+      "scoring_requirement": "All 3 parts must be completed to calculate band score"
+    },
+    {
+      "set_id": "spk_band_7_0_001",
+      "target_band_range": "7.0",
+      "difficulty": "medium",
+      "parts": {
+        "part_1": {
+          "id": "spk_p1_003",
+          "category": "Technology",
+          "questions": [
+            "Do you use technology every day?",
+            "What kind of technology do you use the most?",
+            "Do you think technology has improved people's lives?"
+          ],
+          "expected_keywords": ["smartphone", "laptop", "internet", "social media", "convenient", "efficient", "modern"],
+          "expected_response_length": "medium (6-10 sentences per question)"
+        },
+        "part_2": {
+          "id": "spk_p2_003",
+          "cue_card": "Describe a piece of technology that you use often.\n\nYou should say:\n- what it is\n- how often you use it\n- what you mainly use it for\n\nand explain why you find it useful.",
+          "expected_keywords": ["smartphone", "laptop", "computer", "essential", "communication", "work", "entertainment"],
+          "expected_response_length": "medium-long (1.5 minutes)"
+        },
+        "part_3": {
+          "id": "spk_p3_003",
+          "category": "Education and Technology",
+          "questions": [
+            "How has technology changed the way students learn?",
+            "Do you think online education will replace traditional classrooms?",
+            "What are the advantages and disadvantages of using technology in education?"
+          ],
+          "expected_keywords": ["online learning", "technology", "education", "classroom", "student", "teacher", "digital"],
+          "expected_response_length": "developed discussion"
+        }
+      },
+      "scoring_requirement": "All 3 parts must be completed to calculate band score"
+    },
+    {
+      "set_id": "spk_band_7_5_001",
+      "target_band_range": "7.5",
+      "difficulty": "medium",
+      "parts": {
+        "part_1": {
+          "id": "spk_p1_004",
+          "category": "Hometown",
+          "questions": [
+            "Tell me about your hometown.",
+            "What do you like most about where you live?",
+            "Would you recommend visitors to see your hometown?"
+          ],
+          "expected_keywords": ["city", "population", "atmosphere", "quiet", "busy", "neighbourhood", "convenient", "community"],
+          "expected_response_length": "medium (6-10 sentences)"
+        },
+        "part_2": {
+          "id": "spk_p2_004",
+          "cue_card": "Describe a place you go to when you want to relax.\n\nYou should say:\n- where it is\n- how often you go there\n- what you do there\n\nand explain why it helps you relax.",
+          "expected_keywords": ["park", "beach", "peaceful", "unwind", "escape", "quiet", "nature", "tranquil"],
+          "expected_response_length": "long (1.5-2 minutes)"
+        },
+        "part_3": {
+          "id": "spk_p3_004",
+          "category": "Urban Life",
+          "questions": [
+            "What are the advantages and disadvantages of living in a big city?",
+            "How has urbanisation affected your country?",
+            "Do you think cities will become more crowded in the future?"
+          ],
+          "expected_keywords": ["urban", "rural", "city", "population", "traffic", "pollution", "convenience", "opportunities"],
+          "expected_response_length": "developed discussion with examples"
+        }
+      },
+      "scoring_requirement": "All 3 parts must be completed to calculate band score"
+    },
+    {
+      "set_id": "spk_band_8_0_001",
+      "target_band_range": "8.0",
+      "difficulty": "medium-hard",
+      "parts": {
+        "part_1": {
+          "id": "spk_p1_005",
+          "category": "Hobbies",
+          "questions": [
+            "What hobbies are popular in your country?",
+            "Do you think hobbies are important for children?",
+            "How do hobbies change as people get older?"
+          ],
+          "expected_keywords": ["hobbies", "leisure", "activities", "passion", "relaxation", "stress relief", "fulfilling"],
+          "expected_response_length": "developed responses with examples"
+        },
+        "part_2": {
+          "id": "spk_p2_005",
+          "cue_card": "Describe a teacher who has influenced you.\n\nYou should say:\n- who they were\n- what they taught\n- what made them different\n\nand explain how they have influenced you.",
+          "expected_keywords": ["inspiring", "passionate", "patient", "dedicated", "teaching method", "motivation", "influence", "career"],
+          "expected_response_length": "long with vivid details (2 minutes)"
+        },
+        "part_3": {
+          "id": "spk_p3_005",
+          "category": "Social Media",
+          "questions": [
+            "Do you think social media has changed the way people communicate?",
+            "What are the negative effects of social media on mental health?",
+            "Should governments regulate social media companies?"
+          ],
+          "expected_keywords": ["social media", "communication", "mental health", "anxiety", "addiction", "regulation", "privacy", "online safety", "cyberbullying"],
+          "expected_response_length": "sophisticated discussion with analysis"
+        }
+      },
+      "scoring_requirement": "All 3 parts must be completed to calculate band score"
+    },
+    {
+      "set_id": "spk_band_8_5_001",
+      "target_band_range": "8.5",
+      "difficulty": "hard",
+      "parts": {
+        "part_1": {
+          "id": "spk_p1_006",
+          "category": "Environment",
+          "questions": [
+            "Do you care about environmental issues?",
+            "What can individuals do to help the environment?",
+            "How has environmental awareness changed in recent years?"
+          ],
+          "expected_keywords": ["environment", "climate change", "pollution", "recycling", "sustainability", "conservation", "global warming"],
+          "expected_response_length": "well-developed responses"
+        },
+        "part_2": {
+          "id": "spk_p2_006",
+          "cue_card": "Describe an important event in your life.\n\nYou should say:\n- what it was\n- when it happened\n- who was involved\n\nand explain why it was important to you.",
+          "expected_keywords": ["milestone", "achievement", "challenge", "turning point", "memorable", "significant", "impact"],
+          "expected_response_length": "long, detailed narrative (2 minutes)"
+        },
+        "part_3": {
+          "id": "spk_p3_006",
+          "category": "Work and Employment",
+          "questions": [
+            "How has the nature of work changed in recent decades?",
+            "What skills will be most important in the future workplace?",
+            "Do you think robots and AI will replace human workers?"
+          ],
+          "expected_keywords": ["automation", "AI", "remote work", "lifelong learning", "adaptability", "creativity", "emotional intelligence", "gig economy"],
+          "expected_response_length": "sophisticated analysis with examples"
+        }
+      },
+      "scoring_requirement": "All 3 parts must be completed to calculate band score"
+    },
+    {
+      "set_id": "spk_band_9_0_001",
+      "target_band_range": "9.0",
+      "difficulty": "very hard",
+      "parts": {
+        "part_1": {
+          "id": "spk_p1_007",
+          "category": "Culture",
+          "questions": [
+            "What aspects of your country's culture are you most proud of?",
+            "How has globalisation affected cultural traditions?",
+            "Do you think cultures will become more similar in the future?"
+          ],
+          "expected_keywords": ["culture", "tradition", "heritage", "identity", "globalisation", "diversity", "cultural exchange"],
+          "expected_response_length": "sophisticated, nuanced responses"
+        },
+        "part_2": {
+          "id": "spk_p2_007",
+          "cue_card": "Describe a book that has influenced you significantly.\n\nYou should say:\n- what the book is about\n- when you read it\n- why it was influential\n\nand explain what lessons you learned from it.",
+          "expected_keywords": ["fiction", "non-fiction", "insightful", "thought-provoking", "perspective", "enlightening", "transformative"],
+          "expected_response_length": "compelling narrative with depth (2+ minutes)"
+        },
+        "part_3": {
+          "id": "spk_p3_007",
+          "category": "Society and Ethics",
+          "questions": [
+            "What are the biggest challenges facing society today?",
+            "How should governments balance individual freedom with public safety?",
+            "Do you think moral standards have changed over time?"
+          ],
+          "expected_keywords": ["society", "ethics", "morality", "freedom", "responsibility", "justice", "equality", "technological progress"],
+          "expected_response_length": "masterful, nuanced discussion with sophisticated vocabulary"
+        }
+      },
+      "scoring_requirement": "All 3 parts must be completed to calculate band score"
+    },
+    {
+      "set_id": "spk_band_7_0_002",
+      "target_band_range": "7.0",
+      "difficulty": "medium",
+      "parts": {
+        "part_1": {
+          "id": "spk_p1_008",
+          "category": "Sports",
+          "questions": [
+            "Do you enjoy playing sports?",
+            "What sports are popular in your country?",
+            "Do you think sports should be mandatory in schools?"
+          ],
+          "expected_keywords": ["football", "basketball", "swimming", "exercise", "health", "team", "fitness", "popular"],
+          "expected_response_length": "medium responses"
+        },
+        "part_2": {
+          "id": "spk_p2_008",
+          "cue_card": "Describe a memorable sporting event you watched.\n\nYou should say:\n- what it was\n- when you watched it\n- who you were with\n\nand explain why it was memorable.",
+          "expected_keywords": ["exciting", "championship", "Olympic", "World Cup", "atmosphere", "celebration", "nerve-wracking"],
+          "expected_response_length": "long with vivid description"
+        },
+        "part_3": {
+          "id": "spk_p3_008",
+          "category": "Sports and Society",
+          "questions": [
+            "How do sports bring people together?",
+            "Do you think professional athletes are good role models?",
+            "Should children be encouraged to pursue professional sports careers?"
+          ],
+          "expected_keywords": ["unity", "teamwork", "role model", "inspiration", "career", "pressure", "motivation"],
+          "expected_response_length": "developed discussion"
+        }
+      },
+      "scoring_requirement": "All 3 parts must be completed to calculate band score"
+    },
+    {
+      "set_id": "spk_band_8_0_002",
+      "target_band_range": "8.0",
+      "difficulty": "medium-hard",
+      "parts": {
+        "part_1": {
+          "id": "spk_p1_009",
+          "category": "Reading",
+          "questions": [
+            "Do you enjoy reading? What type of books do you prefer?",
+            "Do you prefer physical books or e-books?",
+            "How often do you read?"
+          ],
+          "expected_keywords": ["books", "fiction", "non-fiction", "reading", "knowledge", "imagination", "entertaining", "educational"],
+          "expected_response_length": "well-developed responses"
+        },
+        "part_2": {
+          "id": "spk_p2_009",
+          "cue_card": "Describe a film that you would recommend others to watch.\n\nYou should say:\n- what the film is about\n- when you watched it\n- why you recommend it\n\nand explain what makes this film worth watching.",
+          "expected_keywords": ["thriller", "comedy", "drama", "inspiring", "plot", "character", "entertaining", "thought-provoking"],
+          "expected_response_length": "long, detailed description (2 minutes)"
+        },
+        "part_3": {
+          "id": "spk_p3_009",
+          "category": "Entertainment",
+          "questions": [
+            "How has the entertainment industry changed in recent years?",
+            "Do you think streaming services have replaced traditional TV?",
+            "What role does entertainment play in modern society?"
+          ],
+          "expected_keywords": ["streaming", "Netflix", "entertainment", "content", "audience", "platform", "consumption", "digital"],
+          "expected_response_length": "sophisticated analysis"
+        }
+      },
+      "scoring_requirement": "All 3 parts must be completed to calculate band score"
+    }
+  ],
+  "writing_sets": [
+    {
+      "set_id": "wrt_band_6_0_001",
+      "target_band_range": "6.0",
+      "difficulty": "easy",
+      "tasks": {
+        "task_1": {
+          "id": "wrt_t1_001",
+          "type": "Academic",
+          "chart_type": "bar chart",
+          "question": "The bar chart shows the number of students enrolled in different university subjects in 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "expected_keywords": ["students", "subjects", "enrolled", "highest", "lowest", "approximately", "significantly", "majority"],
+          "word_count_guideline": "150-180 words"
+        },
+        "task_2": {
+          "id": "wrt_t2_001",
+          "type": "Opinion Essay",
+          "question": "Some people believe that children should start school at a very young age. Others think they should not start school until they are older. Discuss both views and give your opinion.",
+          "expected_keywords": ["education", "school", "young children", "early start", "development", "social skills", "academic"],
+          "structure": {
+            "introduction": "Paraphrase question + state your opinion",
+            "body_paragraph_1": "Arguments for starting school early",
+            "body_paragraph_2": "Arguments for starting school later",
+            "conclusion": "Restate position"
+          },
+          "word_count_guideline": "250-280 words"
+        }
+      },
+      "scoring_requirement": "Both Task 1 and Task 2 must be completed to calculate overall band score"
+    },
+    {
+      "set_id": "wrt_band_6_5_001",
+      "target_band_range": "6.5",
+      "difficulty": "easy-medium",
+      "tasks": {
+        "task_1": {
+          "id": "wrt_t1_002",
+          "type": "Academic",
+          "chart_type": "line graph",
+          "question": "The line graph shows the average temperature in four major cities from 1990 to 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "expected_keywords": ["temperature", "fluctuate", "increase", "decrease", "peak", "gradually", "significantly", "seasonal"],
+          "word_count_guideline": "150-180 words"
+        },
+        "task_2": {
+          "id": "wrt_t2_002",
+          "type": "Discussion Essay",
+          "question": "In many countries, people are living longer than ever before. What are the advantages and disadvantages of this trend?",
+          "expected_keywords": ["longevity", "aging population", "pension", "healthcare", "benefits", "challenges", "society"],
+          "structure": {
+            "introduction": "Introduce the trend",
+            "body_paragraph_1": "Advantages of living longer",
+            "body_paragraph_2": "Disadvantages of living longer",
+            "conclusion": "Balanced summary"
+          },
+          "word_count_guideline": "250-280 words"
+        }
+      },
+      "scoring_requirement": "Both Task 1 and Task 2 must be completed to calculate overall band score"
+    },
+    {
+      "set_id": "wrt_band_7_0_001",
+      "target_band_range": "7.0",
+      "difficulty": "medium",
+      "tasks": {
+        "task_1": {
+          "id": "wrt_t1_003",
+          "type": "Academic",
+          "chart_type": "pie chart",
+          "question": "The pie charts show the main reasons for global water usage in 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "expected_keywords": ["water usage", "agriculture", "industry", "domestic", "percentage", "increased", "decreased", "significant change"],
+          "word_count_guideline": "150-180 words"
+        },
+        "task_2": {
+          "id": "wrt_t2_003",
+          "type": "Problem-Solution Essay",
+          "question": "Many people argue that the increasing use of technology has a negative effect on young people's ability to concentrate and focus. What are the problems associated with this? What solutions can you suggest?",
+          "expected_keywords": ["technology", "concentration", "distraction", "attention span", "digital devices", "academic performance", "social media"],
+          "structure": {
+            "introduction": "Introduce the issue",
+            "body_paragraph_1": "Problems caused by technology",
+            "body_paragraph_2": "Solutions to address the issue",
+            "conclusion": "Summary and recommendations"
+          },
+          "word_count_guideline": "250-280 words"
+        }
+      },
+      "scoring_requirement": "Both Task 1 and Task 2 must be completed to calculate overall band score"
+    },
+    {
+      "set_id": "wrt_band_7_5_001",
+      "target_band_range": "7.5",
+      "difficulty": "medium",
+      "tasks": {
+        "task_1": {
+          "id": "wrt_t1_004",
+          "type": "Academic",
+          "chart_type": "process diagram",
+          "question": "The diagram shows the process of recycling glass bottles. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "expected_keywords": ["recycling", "glass bottles", "collection", "sorting", "cleaning", "crushing", "melting", "stages", "sequence"],
+          "word_count_guideline": "150-180 words"
+        },
+        "task_2": {
+          "id": "wrt_t2_004",
+          "type": "Advantage-Disadvantage Essay",
+          "question": "Some experts believe that it is better for children to begin learning a foreign language at primary school rather than secondary school. Do the advantages of this outweigh the disadvantages?",
+          "expected_keywords": ["foreign language", "primary school", "secondary school", "language acquisition", "cognitive development", "young learners", "native language"],
+          "structure": {
+            "introduction": "Present both sides",
+            "body_paragraph_1": "Advantages of early language learning",
+            "body_paragraph_2": "Disadvantages of early language learning",
+            "conclusion": "Balanced evaluation"
+          },
+          "word_count_guideline": "250-280 words"
+        }
+      },
+      "scoring_requirement": "Both Task 1 and Task 2 must be completed to calculate overall band score"
+    },
+    {
+      "set_id": "wrt_band_8_0_001",
+      "target_band_range": "8.0",
+      "difficulty": "medium-hard",
+      "tasks": {
+        "task_1": {
+          "id": "wrt_t1_005",
+          "type": "Academic",
+          "chart_type": "table",
+          "question": "The table shows the percentage of households using different types of fuel for cooking in six countries in 2010 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "expected_keywords": ["fuel", "cooking", "electricity", "gas", "percentage", "increased", "decreased", "dramatic change", "gradual decline"],
+          "word_count_guideline": "150-180 words"
+        },
+        "task_2": {
+          "id": "wrt_t2_005",
+          "type": "Discussion Essay",
+          "question": "In many countries, the amount of crime is increasing. What do you think are the main causes of crime? How can we reduce crime rates?",
+          "expected_keywords": ["causes of crime", "poverty", "unemployment", "education", "prevention", "law enforcement", "social factors", "rehabilitation"],
+          "structure": {
+            "introduction": "Outline causes and solutions",
+            "body_paragraph_1": "Main causes of crime",
+            "body_paragraph_2": "Possible solutions",
+            "conclusion": "Summary"
+          },
+          "word_count_guideline": "250-280 words"
+        }
+      },
+      "scoring_requirement": "Both Task 1 and Task 2 must be completed to calculate overall band score"
+    },
+    {
+      "set_id": "wrt_band_8_5_001",
+      "target_band_range": "8.5",
+      "difficulty": "hard",
+      "tasks": {
+        "task_1": {
+          "id": "wrt_t1_006",
+          "type": "Academic",
+          "chart_type": "mixed chart",
+          "question": "The graph and table show information about energy consumption in a European country from 2000 to 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "expected_keywords": ["energy", "consumption", "renewable", "fossil fuels", "trend", "fluctuation", "correlation", "significant growth"],
+          "word_count_guideline": "150-180 words"
+        },
+        "task_2": {
+          "id": "wrt_t2_006",
+          "type": "Argumentative Essay",
+          "question": "Some people say that the main environmental problem of our time is the loss of particular species of plants and animals. Other people say that there are more important environmental problems. Discuss both these views and give your own opinion.",
+          "expected_keywords": ["biodiversity", "extinction", "climate change", "deforestation", "habitat loss", "conservation", "ecosystem", "global warming"],
+          "structure": {
+            "introduction": "Present both views and state opinion",
+            "body_paragraph_1": "Biodiversity loss as main issue",
+            "body_paragraph_2": "Climate change as more critical",
+            "body_paragraph_3": "Personal opinion with nuanced view",
+            "conclusion": "Balanced synthesis"
+          },
+          "word_count_guideline": "280-300 words"
+        }
+      },
+      "scoring_requirement": "Both Task 1 and Task 2 must be completed to calculate overall band score"
+    },
+    {
+      "set_id": "wrt_band_9_0_001",
+      "target_band_range": "9.0",
+      "difficulty": "very hard",
+      "tasks": {
+        "task_1": {
+          "id": "wrt_t1_007",
+          "type": "Academic",
+          "chart_type": "complex process",
+          "question": "The diagrams show the water cycle and how a city water supply system works. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "expected_keywords": ["water cycle", "evaporation", "condensation", "precipitation", "collection", "purification", "distribution", "sustainable"],
+          "word_count_guideline": "150-180 words"
+        },
+        "task_2": {
+          "id": "wrt_t2_007",
+          "type": "Discussion Essay",
+          "question": "Some people believe that competition at work and school improves performance, while others argue that it has negative effects. Discuss both these views and give your own opinion.",
+          "expected_keywords": ["competition", "performance", "motivation", "pressure", "stress", "cooperation", "collaboration", "achievement"],
+          "structure": {
+            "introduction": "Introduce both perspectives",
+            "body_paragraph_1": "Benefits of competition",
+            "body_paragraph_2": "Drawbacks of competition",
+            "body_paragraph_3": "Personal synthesis and nuanced opinion",
+            "conclusion": "Sophisticated conclusion"
+          },
+          "word_count_guideline": "280-300 words"
+        }
+      },
+      "scoring_requirement": "Both Task 1 and Task 2 must be completed to calculate overall band score"
+    },
+    {
+      "set_id": "wrt_band_7_0_002",
+      "target_band_range": "7.0",
+      "difficulty": "medium",
+      "tasks": {
+        "task_1": {
+          "id": "wrt_t1_008",
+          "type": "Academic",
+          "chart_type": "bar chart",
+          "question": "The chart shows the percentage of people using different transport methods to get to work in a city between 2000 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "expected_keywords": ["transport", "commute", "car", "public transport", "bicycle", "percentage", "increased", "decreased", "shift"],
+          "word_count_guideline": "150-180 words"
+        },
+        "task_2": {
+          "id": "wrt_t2_008",
+          "type": "Opinion Essay",
+          "question": "Some people think that governments should spend money on railways rather than roads. To what extent do you agree or disagree?",
+          "expected_keywords": ["railways", "roads", "transport", "investment", "infrastructure", "environment", "cost", "efficiency"],
+          "structure": {
+            "introduction": "Paraphrase and state position",
+            "body_paragraph_1": "Arguments for railway investment",
+            "body_paragraph_2": "Arguments for road investment",
+            "conclusion": "Balanced conclusion"
+          },
+          "word_count_guideline": "250-280 words"
+        }
+      },
+      "scoring_requirement": "Both Task 1 and Task 2 must be completed to calculate overall band score"
+    },
+    {
+      "set_id": "wrt_band_8_0_002",
+      "target_band_range": "8.0",
+      "difficulty": "medium-hard",
+      "tasks": {
+        "task_1": {
+          "id": "wrt_t1_009",
+          "type": "Academic",
+          "chart_type": "multiple charts",
+          "question": "The two maps show information about a coastal town in 1990 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+          "expected_keywords": ["coastal", "development", "tourism", "residential", "commercial", "expansion", "transformation", "urbanisation"],
+          "word_count_guideline": "150-180 words"
+        },
+        "task_2": {
+          "id": "wrt_t2_009",
+          "type": "Direct Question",
+          "question": "In some countries, more and more people are choosing to live alone nowadays than in the past. Do you think this is a positive or negative development? What are the causes of this?",
+          "expected_keywords": ["living alone", "independence", "social isolation", "urbanisation", "changing values", "modern lifestyle", "economic factors"],
+          "structure": {
+            "introduction": "State overall view",
+            "body_paragraph_1": "Positive/negative aspects",
+            "body_paragraph_2": "Causes of living alone",
+            "conclusion": "Final position"
+          },
+          "word_count_guideline": "280-300 words"
+        }
+      },
+      "scoring_requirement": "Both Task 1 and Task 2 must be completed to calculate overall band score"
+    }
+  ],
+  "statistics": {
+    "total_speaking_sets": 9,
+    "total_writing_sets": 9,
+    "total_sets": 18,
+    "speaking_sets_by_band": {
+      "6.0": 1,
+      "6.5": 1,
+      "7.0": 2,
+      "7.5": 1,
+      "8.0": 2,
+      "8.5": 1,
+      "9.0": 1
+    },
+    "writing_sets_by_band": {
+      "6.0": 1,
+      "6.5": 1,
+      "7.0": 2,
+      "7.5": 1,
+      "8.0": 2,
+      "8.5": 1,
+      "9.0": 1
+    },
+    "total_questions_per_type": {
+      "speaking_part_1": 9,
+      "speaking_part_2": 9,
+      "speaking_part_3": 9,
+      "writing_task_1": 9,
+      "writing_task_2": 9
+    },
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 8,
+      "hard": 4,
+      "very_hard": 2
+    }
   },
-  {
-    "question": "Học phí được thanh toán theo hình thức nào?",
-    "expected_answer": "Thanh toán theo từng học kỳ, tính theo từng môn học đã đăng ký.",
-    "expected_context": "Trang Tuition Fees, mục Payment Structure"
-  },
-  {
-    "question": "Trường có cung cấp ký túc xá trong khuôn viên không?",
-    "expected_answer": "Không — trường không cung cấp chỗ ở trong khuôn viên, nhưng có đội ngũ hỗ trợ sinh viên tìm chỗ ở gần trường.",
-    "expected_context": "Trang Accommodation Services"
+  "metadata": {
+    "purpose": "Evaluation of RAG system responses for IELTS preparation content",
+    "source": "IELTS official samples and examiner-graded responses",
+    "band_coverage": ["6.0", "6.5", "7.0", "7.5", "8.0", "8.5", "9.0"],
+    "note": "Each speaking set requires all 3 parts answered. Each writing set requires both Task 1 and Task 2 answered to calculate overall band score. Full test (Speaking + Writing) requires 4 tasks to calculate overall band."
   }
-]
+}
